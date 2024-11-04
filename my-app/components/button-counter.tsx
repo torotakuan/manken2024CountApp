@@ -61,7 +61,7 @@ export function ButtonCounterComponent() {
     <div className="flex flex-col md:flex-row h-screen p-4 gap-4">
       <div className="flex-1 border rounded-lg p-4 overflow-auto">
         <h2 className="text-2xl font-bold mb-4">ボタン</h2>
-        <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-2">
+        <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-2">
           {counts.map((_, index) => (
             <Button
               key={index}
@@ -86,7 +86,7 @@ export function ButtonCounterComponent() {
                 lastUpdated === index ? 'bg-green-100 hover:bg-green-200' : ''
               }`}
             >
-              <span className="font-medium">ボタン {index + 1}:</span>
+              <span className="font-medium">作品 {index + 1}:</span>
               <span className={`text-lg ${lastUpdated === index ? 'text-green-600' : ''}`}>
                 {count}
               </span>
